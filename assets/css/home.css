@@ -1,0 +1,15 @@
+@import "../css/style.css";
+
+.login .login-btn {
+  transition: .2s ease;
+}
+
+.login .login-btn:first-child:hover {
+  background-color: hsl(from var(--primary) h s calc(l - 5)) !important;
+}
+
+.login .login-btn:last-child:hover {
+  background: var(--primary);
+  color: white !important;
+}
+
