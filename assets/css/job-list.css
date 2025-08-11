@@ -1,0 +1,30 @@
+.nav-pills {
+  border-bottom: 2px solid #ccc;
+  width: 30%;       
+  margin: auto;     
+}
+
+.nav-pills .nav-link {
+  background: none !important;
+  border: none;
+  border-bottom: 3px solid transparent;  
+  border-radius: 0;                      /* removes rounded corners */
+  color: #333;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-pills .nav-link.active {
+  border-bottom: 3px solid #007bff;     /* active tab underline */
+  color: #007bff;                       /* active tab text color */
+}
+
+.nav-pills .nav-link:hover {
+  color: #0056b3;                       /* color on hover */
+}
+
+
+.btn-success {
+      background-color: #52bd9d;
+      border: none;
+
+    }
