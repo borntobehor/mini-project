@@ -1,0 +1,12 @@
+/* Normal tab buttons */
+.nav-pills .nav-link {
+  background-color: #f0f0f0; /* light gray */
+  color: #000; /* text color */
+}
+
+/* Active tab button */
+.nav-pills .nav-link.active {
+  background-color: #d06328 !important; /* blue */
+  color: white;
+}
+
