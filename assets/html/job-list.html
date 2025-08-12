@@ -29,6 +29,113 @@
   </head>
 
   <body>
+    <header class="position-sticky top-0 z-2">
+      <nav class="navbar navbar-expand-md bg-white">
+        <div class="container-lg py-3">
+          <a class="navbar-brand fw-bold" href="#" data-aos="fade-down"
+            ><img src="../img/logo.jpg" style="width: 45px" alt="" />&nbsp; Job
+            Finding</a
+          >
+          <button
+            class="navbar-toggler shadow-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            data-aos="fade-down"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end w-100"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">
+                <img src="../img/logo.jpg" style="width: 45px" alt="" />&nbsp;
+                Job Finding
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body align-items-center">
+              <ul
+                class="navbar-nav justify-content-center flex-grow-1 pe-3 gap-lg-5"
+                data-aos="fade-down"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link fw-medium active"
+                    aria-current="page"
+                    href="../../index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link fw-medium dropdown-icon text-dark shadow-none"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Job
+                    <i class="bi bi-chevron-down icon"></i>
+                  </a>
+                  <ul class="dropdown-menu shadow-sm">
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Job Listing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../html/job-detail.html"
+                        >Job Detail</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link fw-medium text-black"
+                    href="../html/about.html"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link fw-medium text-dark"
+                    href="../html/contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+              <div class="login d-flex mt-sm-3 mt-lg-0" data-aos="fade-down">
+                <a
+                  class="btn login-btn bg-red rounded border-2 rounded-5 border-red text-white fw-bold"
+                  href="../html/sign-in.html"
+                  >Sign In</a
+                >
+                <a
+                  class="btn login-btn ms-2 border-2 border-red rounded-5 text-red fw-bold"
+                  href="../html/sign-up.html"
+                  >Sign Up</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main>
       <section class="m-5">
         <div
@@ -1114,6 +1221,76 @@
         </div>
       </section>
     </main>
+    <footer data-aos="fade-up">
+      <div class="container bg-red mt-10 py-5 rounded-top-5">
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-transparent border-0">
+              <div class="card-body text-white">
+                <h4 class="card-title">Company</h4>
+                <ul class="navbar-nav">
+                  <li>
+                    <a href="" class="nav-link fw-medium">About</a>
+                  </li>
+                  <li>
+                    <a href="" class="nav-link fw-medium">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="" class="nav-link fw-medium">Our Service</a>
+                  </li>
+                  <li>
+                    <a href="" class="nav-link fw-medium">Terms & Condition</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-transparent border-0">
+              <div class="card-body text-white">
+                <h4 class="card-title">Contact</h4>
+                <ul class="navbar-nav">
+                  <li class="d-flex align-items-center gap-2">
+                    <i class="bi bi-pin-map-fill"></i>
+                    <a href="" class="nav-link fw-medium">About</a>
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <i class="bi bi-phone-fill"></i>
+                    <a href="" class="nav-link fw-medium">+855 12 345 678</a>
+                  </li>
+                  <li class="d-flex align-items-center gap-2">
+                    <i class="bi bi-envelope-fill"></i>
+                    <a href="" class="nav-link fw-medium">info@example.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card border-0 bg-transparent">
+              <div class="card-body text-white">
+                <h4 class="card-title">Newsletter</h4>
+                <p class="card-text">
+                  Dolor amet sit justo amet elitr clita ipsum elitr est.
+                </p>
+                <div class="card-input">
+                  <input
+                    type="email"
+                    class="w-100 border-0 p-2 rounded-2"
+                    placeholder="Email"
+                  />
+                  <a
+                    href=""
+                    class="card-link btn bg-white text-red rounded-5 mt-3 px-5 py-2 fw-medium"
+                    >Sign Up</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
