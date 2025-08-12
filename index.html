@@ -12,11 +12,23 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.css"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-md fixed-top">
+    <header class="position-sticky top-0 animate__animated animate__fadeInDown">
+      <nav class="navbar navbar-expand-md bg-white">
         <div class="container-lg py-3">
           <a class="navbar-brand fw-bold" href="#"
             ><img src="assets/img/logo.jpg" style="width: 45px" alt="" />&nbsp;
@@ -40,8 +52,11 @@
           >
             <div class="offcanvas-header">
               <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">
-              <img src="assets/img/logo.jpg" style="width: 45px" alt="" />&nbsp;
-                Job Finding  
+                <img
+                  src="assets/img/logo.jpg"
+                  style="width: 45px"
+                  alt=""
+                />&nbsp; Job Finding
               </h5>
               <button
                 type="button"
@@ -51,9 +66,14 @@
               ></button>
             </div>
             <div class="offcanvas-body align-items-center">
-              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 gap-lg-5">
+              <ul
+                class="navbar-nav justify-content-center flex-grow-1 pe-3 gap-lg-5"
+              >
                 <li class="nav-item">
-                  <a class="nav-link fw-medium active" aria-current="page" href="#"
+                  <a
+                    class="nav-link fw-medium active"
+                    aria-current="page"
+                    href="#"
                     >Home</a
                   >
                 </li>
@@ -83,14 +103,90 @@
                 </li>
               </ul>
               <div class="login d-flex mt-sm-3 mt-lg-0">
-                <a class="btn login-btn bg-red rounded border-2 rounded-5 border-red text-white fw-bold" href="assets/html/sign-in.html">Sign In</a>
-                <a class="btn login-btn ms-2 border-2 border-red rounded-5 text-red fw-bold" href="assets/html/sign-up.html">Sign Up</a>
+                <a
+                  class="btn login-btn bg-red rounded border-2 rounded-5 border-red text-white fw-bold"
+                  href="assets/html/sign-in.html"
+                  >Sign In</a
+                >
+                <a
+                  class="btn login-btn ms-2 border-2 border-red rounded-5 text-red fw-bold"
+                  href="assets/html/sign-up.html"
+                  >Sign Up</a
+                >
               </div>
             </div>
           </div>
         </div>
       </nav>
     </header>
+    <main>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 position-relative d-flex flex-column align-items-center" data-aos="fade-up">
+              <div class="w-100 h-100 position-absolute">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="swiper-img w-100">
+                        <img src="assets/img/interview1.png" alt="" />
+                        <div class="overlay"></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-img w-100">
+                        <img src="assets/img/interview2.png" alt="" />
+                        <div class="overlay"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next text-white bg-red"></div>
+                  <div class="swiper-button-prev text-white bg-red"></div>
+                  <!-- <div class="swiper-pagination"></div> -->
+                </div>
+              </div>
+              <div class="position-absolute text-white z-1">
+                <div class="hero d-flex align-items-center">
+                  <div class="job-hero w-75">
+                    <h1 class="hero-title fw-bold display-4">
+                      Find The Best Startup Job That Fit You
+                    </h1>
+                    <p class="hero-text">
+                      Vero elitr justo clita lorem. Ipsum dolor at sed stet sit
+                      diam no. Kasd rebum ipsum et diam justo clita et kasd
+                      rebum sea elitr.
+                    </p>
+                    <a href="assets/html/job-list.html" class="btn bg-red text-white fw-medium rounded-5 py-2 px-5 fs-5 border-0">Apply Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 0,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </html>
