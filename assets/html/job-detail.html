@@ -4,23 +4,324 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini Project</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="../bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="../css/job-detail.css">
-    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="../css/job-detail.css" />
+    <link rel="stylesheet" href="../css/theme.css" />
+    
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
+    <header class="position-sticky top-0 z-3">
+      <nav class="navbar navbar-expand-md bg-white">
+        <div class="container-lg py-3">
+          <a class="navbar-brand fw-bold" href="#"
+            ><img src="../img/logo.jpg" style="width: 45px" alt="" />&nbsp;
+            Job Finding</a
+          >
+          <button
+            class="navbar-toggler shadow-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end w-100"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">
+              <img src="assets/img/logo.jpg" style="width: 45px" alt="" />&nbsp;
+                Job Finding  
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body align-items-center">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 gap-lg-5">
+                <li class="nav-item">
+                  <a class="nav-link fw-medium active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link fw-medium dropdown-icon text-dark shadow-none"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Job
+                    <i class="bi bi-chevron-down icon"></i>
+                  </a>
+                  <ul class="dropdown-menu shadow-sm">
+                    <li><a class="dropdown-item" href="#">Job Listing</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Job Detail</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-medium text-black" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fw-medium text-dark" href="#">Contact</a>
+                </li>
+              </ul>
+              <div class="login d-flex mt-sm-3 mt-lg-0">
+                <a class="btn login-btn bg-red rounded border-2 rounded-5 border-red text-white fw-bold" href="assets/html/sign-in.html">Sign In</a>
+                <a class="btn login-btn ms-2 border-2 border-red rounded-5 text-red fw-bold" href="assets/html/sign-up.html">Sign Up</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main>
       <section>
-        <div class="container">
-          
+        <div class="container my-5">
+          <div class="row gy-5 gx-4">
+            <div class="col-lg-8  " data-aos="fade-up">
+              <div class="d-flex align-items-center mb-4">
+               
+                <div>
+                  <h3 class="mb-1 text-red style-css">Marketing Manager</h3>
+                  <div class="text-muted mb-1">
+                    <i class="bi bi-geo-alt"></i> New York, USA
+                    <span class="mx-2">|</span>
+                    <i class="bi bi-clock"></i> Full Time
+                    <span class="mx-2">|</span>
+                   <i class="bi bi-cash"></i> $5453 - $7456
+                  </div>
+                </div>
+              </div>
+              <h5 class="mb-2 text-red">Job description</h5>
+              <p class="mb-4">
+                Dolor justo tempor do ipsum accumsan rebup gubergrem erat. Elitr
+                stet dolor vero clita labore gubergrem. Kasd sed ipsum elitr
+                erat rebup et sea sed tempor. Sadipscing nonumy vero labore
+                invidunt dolor sed, sirmod dolore amet aliquyam consectetur
+                lorem, amet elitr et sed et consectetur dolore accusam. Kasd
+                vord nonumy justo rebup stet. Ipsum stet lorem sea magna. Rebum
+                vero dolores dolores elitr vero dolores magna, stet sea
+                sadipscing stet et. Est voluptua et sanctus et sanctus erat vero
+                sed, amet duo do diam clita rebum duo, accusam tempor takimata
+                clita stet nonumy rebup est invidunt stet, duo.
+              </p>
+              <h5 class="mb-2 text-red">Responsibility</h5>
+              <p>
+                Magna et elitr diam sed lorem. Diam diam stet erat no est est.
+                Accusam sed lorem stet voluptua sit sit at stet consectetur,
+                takimata at diam kasd gubergrem elitr dolor
+              </p>
+              <ul class="list-unstyled ms-3 mb-4">
+                <li class="mb-1">
+                  <i class="bi bi-chevron-right text-success"></i
+                  > Dolor justo tempor
+                  duo ipsum accumsan
+                </li>
+                <li class="mb-1">
+                  <i class="bi bi-chevron-right text-success"></i> Elitr stet
+                  dolor vero clita labore gubergrem
+                </li>
+                <li class="mb-1">
+                  <i class="bi bi-chevron-right text-success"></i> Rebum vero
+                  dolores dolores elitr
+                </li>
+                <li class="mb-1">
+                  <i class="bi bi-chevron-right text-success"></i> Est voluptua
+                  et sanctus et sanctus erat
+                </li>
+                <li class="mb-1">
+                  <i class="bi bi-chevron-right text-success"></i> Diam diam
+                  stet erat no est est
+                </li>
+              </ul>
+              <h5 class="mb-2 text-red">Qualifications</h5>
+              <p>
+                Magna et elitr diam sed lorem. Diam diam stet erat no est est.
+                Accusam sed lorem stet voluptua sit sit at stet consectetur,
+                takimata at diam kasd gubergrem elitr dolor
+              </p>
+              <ul class="list-unstyled ms-3 mb-4">
+                <li class="mb-1">
+                  <i class="bi bi-chevron-right text-success"></i> Dolor justo
+                  tempor duo ipsum accumsan
+                </li>
+                <li class="mb-1">
+                  <i class="bi bi-chevron-right text-success"></i> Elitr stet
+                  dolor vero clita labore gubergrem
+                </li>
+                <li class="mb-1">
+                  <i class="bi bi-chevron-right text-success"></i> Rebum vero
+                  dolores dolores elitr
+                </li>
+                <li class="mb-1">
+                  <i class="bi bi-chevron-right text-success"></i> Est voluptua
+                  et sanctus et sanctus erat
+                </li>
+                <li class="mb-1">
+                  <i class="bi bi-chevron-right text-success"></i> Diam diam
+                  stet erat no est est
+                </li>
+              </ul>
+              <h5 class="mb-3 text-red">Apply For The Job</h5>
+              <form >
+                <div class="row g-3 mb-3">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Portfolio Website"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input type="file" class="form-control" />
+                  </div>
+                  <div class="col-12">
+                    <textarea
+                      class="form-control"
+                      rows="3"
+                      placeholder="Coverletter"
+                    ></textarea>
+                  </div>
+                </div>
+                <button type="submit" class="btn bg-red rounded-5 text-white w-100 py-2 fs-5">
+                  Apply Now
+                </button>
+              </form>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up">
+              <div class="mb-4">
+                <div class="card border-0 bg-red-opacity">
+                  <div class="card-body">
+                    <h5 class="card-title mb-3 fw-bold text-red" style="font-size: 2rem">
+                      Job Summery
+                    </h5>
+                    <ul class="list-unstyled mb-0">
+                      <li
+                        class="mb-3 d-flex align-items-center"
+                        style="font-size: 1.20rem"
+                      >
+                        <i
+                          class="bi bi-chevron-right text-success me-2"
+                          style="font-size: 1.5rem"
+                        ></i>
+                        <span><strong>Published On:</strong> 01 Jan, 2045</span>
+                      </li>
+                      <li
+                        class="mb-3 d-flex align-items-center"
+                        style="font-size: 1.20rem"
+                      >
+                        <i
+                          class="bi bi-chevron-right text-success me-2"
+                          style="font-size: 1.5rem"
+                        ></i>
+                        <span><strong>Vacancy:</strong> 123 Position</span>
+                      </li>
+                      <li
+                        class="mb-3 d-flex align-items-center"
+                        style="font-size: 1.20rem"
+                      >
+                        <i
+                          class="bi bi-chevron-right text-success me-2"
+                          style="font-size: 1.5rem"
+                        ></i>
+                        <span><strong>Job Nature:</strong> Full Time</span>
+                      </li>
+                      <li
+                        class="mb-3 d-flex align-items-center"
+                        style="font-size: 1.20rem"
+                      >
+                        <i
+                          class="bi bi-chevron-right text-success me-2"
+                          style="font-size: 1.5rem"
+                        ></i>
+                        <span><strong>Salary:</strong> $5000 - $10056</span>
+                      </li>
+                      <li
+                        class="mb-3 d-flex align-items-center"
+                        style="font-size: 1.20rem"
+                      >
+                        <i
+                          class="bi bi-chevron-right text-success me-2"
+                          style="font-size: 1.5rem"
+                        ></i>
+                        <span><strong>Location:</strong> New York, USA</span>
+                      </li>
+                      <li
+                        class="mb-3 d-flex align-items-center"
+                        style="font-size: 1.20rem"
+                      >
+                        <i
+                          class="bi bi-chevron-right text-success me-2"
+                          style="font-size: 1.5rem"
+                        ></i>
+                        <span><strong>Date Line:</strong> 01 Jan, 2045</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="card border-0 bg-red-opacity ">
+                  <div class="card-body">
+                    <h5 class="card-title mb-3 text-red ">Company Detail</h5>
+                    <p class="mb-0 ">
+                      Ipsum dolor ipsum accumsan stet et et diam dolores, sed
+                      rebum sadipscing elitr vero dolores. Lorem dolore elitr
+                      justo et no gubergrem sadipscing. Ipsum et takimata
+                      aliquyam et rebum est ipsum lorem diam. Et lorem magna
+                      eirmod est et et sanctus et, kasd clita labore.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
   </body>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
 </html>
