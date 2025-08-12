@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/home.css" />
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.css" />
-    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.css"
@@ -27,10 +27,10 @@
     />
   </head>
   <body>
-    <header class="position-sticky top-0 animate__animated animate__fadeInDown">
+    <header class="position-sticky top-0 z-2">
       <nav class="navbar navbar-expand-md bg-white">
         <div class="container-lg py-3">
-          <a class="navbar-brand fw-bold" href="#"
+          <a class="navbar-brand fw-bold" href="#" data-aos="fade-down"
             ><img src="assets/img/logo.jpg" style="width: 45px" alt="" />&nbsp;
             Job Finding</a
           >
@@ -41,6 +41,7 @@
             data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar"
             aria-label="Toggle navigation"
+            data-aos="fade-down"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -67,7 +68,7 @@
             </div>
             <div class="offcanvas-body align-items-center">
               <ul
-                class="navbar-nav justify-content-center flex-grow-1 pe-3 gap-lg-5"
+                class="navbar-nav justify-content-center flex-grow-1 pe-3 gap-lg-5" data-aos="fade-down"
               >
                 <li class="nav-item">
                   <a
@@ -102,7 +103,7 @@
                   <a class="nav-link fw-medium text-dark" href="#">Contact</a>
                 </li>
               </ul>
-              <div class="login d-flex mt-sm-3 mt-lg-0">
+              <div class="login d-flex mt-sm-3 mt-lg-0" data-aos="fade-down">
                 <a
                   class="btn login-btn bg-red rounded border-2 rounded-5 border-red text-white fw-bold"
                   href="assets/html/sign-in.html"
@@ -121,43 +122,116 @@
     </header>
     <main>
       <section>
-        <div class="container">
+        <div class="container-lg animate__animated animate__zoomIn">
           <div class="row">
-            <div class="col-12 position-relative d-flex flex-column align-items-center" data-aos="fade-up">
-              <div class="w-100 h-100 position-absolute">
-                <div class="swiper mySwiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="swiper-img w-100">
-                        <img src="assets/img/interview1.png" alt="" />
-                        <div class="overlay"></div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="swiper-img w-100">
-                        <img src="assets/img/interview2.png" alt="" />
-                        <div class="overlay"></div>
-                      </div>
-                    </div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper-img">
+                    <img src="assets/img/interview1.png" alt="" />
                   </div>
-                  <div class="swiper-button-next text-white bg-red"></div>
-                  <div class="swiper-button-prev text-white bg-red"></div>
-                  <!-- <div class="swiper-pagination"></div> -->
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-img">
+                    <img src="assets/img/interview2.png" alt="" />
+                  </div>
                 </div>
               </div>
-              <div class="position-absolute text-white z-1">
-                <div class="hero d-flex align-items-center">
-                  <div class="job-hero w-75">
-                    <h1 class="hero-title fw-bold display-4">
+              <div class="hero">
+                <div class="hero-content text-white m-auto">
+                  <div class="fit">
+                    <h1 class="hero-title fw-bold">
                       Find The Best Startup Job That Fit You
                     </h1>
                     <p class="hero-text">
                       Vero elitr justo clita lorem. Ipsum dolor at sed stet sit
-                      diam no. Kasd rebum ipsum et diam justo clita et kasd
-                      rebum sea elitr.
+                      diam no. Kasd rebum ipsum et diam justo clita et kasd rebum
+                      sea elitr.
                     </p>
-                    <a href="assets/html/job-list.html" class="btn bg-red text-white fw-medium rounded-5 py-2 px-5 fs-5 border-0">Apply Now</a>
+                    <a href="assets/html/job-list.html" class="hero-link btn bg-red text-white rounded-5 py-2 px-5 fs-5">Apply Now</a>
                   </div>
+                </div>
+              </div>
+              <div class="swiper-button-next bg-red text-white rounded-circle"></div>
+              <div class="swiper-button-prev bg-red text-white rounded-circle"></div>
+              <!-- <div class="swiper-pagination"></div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container my-15">
+          <h2 class="explore text-center fw-bold display-5 text-red animate__animated animate__fadeInUp">Explore By Category</h2>
+          <div class="row g-4 mt-10">
+            <div class="col-md-6 col-lg-3">
+              <div class="card border-0 shadow-sm" data-aos="fade-up">
+                <div class="card-body">
+                  <i class="bi bi-mailbox2-flag fs-1 text-red"></i>
+                  <h5 class="card-title fw-bold">Marketing</h5>
+                  <p class="card-text">123 Vacancy</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card border-0 shadow-sm" data-aos="fade-up">
+                <div class="card-body">
+                  <i class="bi bi-headset fs-1 text-red"></i>
+                  <h5 class="card-title fw-bold">Customer Service</h5>
+                  <p class="card-text">123 Vacancy</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card border-0 shadow-sm" data-aos="fade-up">
+                <div class="card-body">
+                  <i class="bi bi-person-fill fs-1 text-red"></i>
+                  <h5 class="card-title fw-bold">Human Resource</h5>
+                  <p class="card-text">123 Vacancy</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card border-0 shadow-sm" data-aos="fade-up">
+                <div class="card-body">
+                  <i class="bi bi-list-check fs-1 text-red"></i>
+                  <h5 class="card-title fw-bold">Project Management</h5>
+                  <p class="card-text">123 Vacancy</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card border-0 shadow-sm" data-aos="fade-up">
+                <div class="card-body">
+                  <i class="bi bi-graph-up-arrow fs-1 text-red"></i>
+                  <h5 class="card-title fw-bold">Business Development</h5>
+                  <p class="card-text">123 Vacancy</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card border-0 shadow-sm" data-aos="fade-up">
+                <div class="card-body">
+                  <i class="bi bi-chat-dots-fill fs-1 text-red"></i>
+                  <h5 class="card-title fw-bold">Sales & Communication</h5>
+                  <p class="card-text">123 Vacancy</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card border-0 shadow-sm" data-aos="fade-up">
+                <div class="card-body">
+                  <i class="bi bi-book-half fs-1 text-red"></i>
+                  <h5 class="card-title fw-bold">Teaching & Education</h5>
+                  <p class="card-text">123 Vacancy</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card border-0 shadow-sm" data-aos="fade-up">
+                <div class="card-body">
+                  <i class="bi bi-amd fs-1 text-red"></i>
+                  <h5 class="card-title fw-bold">Design & Creative</h5>
+                  <p class="card-text">123 Vacancy</p>
                 </div>
               </div>
             </div>
