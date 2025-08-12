@@ -1,0 +1,44 @@
+@import "../css/style.css";
+
+.login .login-btn {
+  transition: .2s ease;
+}
+
+.login .login-btn:first-child:hover {
+  background-color: hsl(from var(--primary) h s calc(l - 5)) !important;
+}
+
+.login .login-btn:last-child:hover {
+  background: var(--primary);
+  color: white !important;
+}
+
+.swiper-img {
+  height: 700px;
+  position: relative;
+}
+
+.swiper-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  position: absolute;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  padding: 40px;
+  border-radius: 50%;
+  scale: .7;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+}
+
+.hero {
+  height: 700px;
+}

@@ -1,5 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif !important;
+}
+
+:root {
+  --primary: #fe380c;
+  --opacity: rgb(248, 170, 152);
+}
+
+.text-red {
+  color:  var(--primary) !important;
+}
+
+.bg-red {
+  background-color: var(--primary) !important;
+}
+
+.bg-red-opacity {
+  background-color: var(--opacity) !important;
+}
+
+.border-red {
+  border-color: #fe380c !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--primary) !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary) !important;
+}
+
+.glass {
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
+}
+
+.glass-border-bottom {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
