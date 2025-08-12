@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.border-icon{
+    width: 45px;
+    height: 45px;
+}
+.hero-banner{
+    height: 55vh;
+}
+.hero-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.map{
+    width: 600px;
+    height: 450px;
+}
